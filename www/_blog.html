@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+</head>
+
+<body>
+    <div class="heading"><a href="/index.html"><h1>Eren Karagül</h1></a></div>
+    <div class="content">
+      {{#section blog }}
+        <div class="wrapper">
+            <h1><a href="{{_permalink}}">{{title priority=1}}</a></h1><div class="meta"><h5>Posted on {{_created_at format="%m/%d/%Y"}}</h5></div>
+            <div class="paragraph"><p id="p">{{post type="html" images="true" required=false long=true priority=2}}</p></div>
+         </div>
+        <div class="buttons">
+            <div><a href="{{previouslink}}" class="pbtn">Previous</a></div>
+            <div><a href="{{nextlink}}" class="nbtn">Next</a></div>
+        </div>
+      {{/section}}
+     </div>
+</body>
+</html>

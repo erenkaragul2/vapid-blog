@@ -1,0 +1,169 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #515454;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style: none;
+}
+a, h1,h2,h3,h4,h5,h6 {
+  text-decoration: none;
+  color: black;
+}
+.title {
+  margin-top: 50px;
+}
+ol {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.list {
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+#p {
+  margin-top: 25px;
+}
+.content {
+  margin-top: 50px;
+  width: 80%;
+  margin-left: 10%;
+}
+.pbtn {
+  width: auto;
+  font: bold 1.6rem 'Roboto';
+  justify-self: center;
+  align-self: center;
+  color: black;
+  
+}
+.nbtn {
+  width: auto;
+  font: bold 1.6rem 'Roboto';
+  color: black;
+  justify-self: center;
+  align-self: center;
+  
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.paragraph {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+#daha {
+  color: #2C2E2E;
+  justify-self: end;
+}
+.readmore {
+  width: 30%;
+  margin-left: 80%;
+}
+.empty {
+  width: 100%;
+  height: 75px;
+  background-color: white;
+}
+img {
+  width: 80%;
+  margin-left: 10%;
+}
+.container {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 200px;
+}
+.menu {
+  margin-top: 25px;
+  width: 100%;
+}
+h3 {
+  padding-bottom: 5px ;
+  width: 10%;
+  margin-left: 45%;
+}
+.entry {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .readmore {
+    width: 50%;
+    margin-left: 60%;
+  }
+}
+@media (max-width: 412px) {
+  .pbtn {
+    width: auto;
+    font: bold 1.2rem 'Roboto';
+  }
+  body {
+    font-size: 1.4rem;
+  }
+  .nbtn {
+    width: auto;
+    font: bold 1.2rem 'Roboto';
+  }
+  .buttons {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 327px) {
+  .pbtn {
+    width: auto;
+    font: bold 1rem 'Roboto';
+  }
+  body {
+    font-size: 1.2rem;
+  }
+  .nbtn {
+    width: auto;
+    font: bold 1rem 'Roboto';
+  }
+  .buttons {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 288px) {
+  .pbtn {
+    width: auto;
+    font: bold 1rem 'Roboto';
+  }
+  body {
+    font-size: 1.1rem;
+  }
+  .nbtn {
+    width: auto;
+    font: bold 1rem 'Roboto';
+  }
+  
+}
